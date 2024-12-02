@@ -5,7 +5,7 @@ This repository contains the solution for sorting packages into appropriate stac
 
 ## Sorting Logic
 
-The function `sort(width, height, length, mass)` determines the correct stack for a package based on the following rules:
+The function sort(width, height, length, mass)` determines the correct stack for a package based on the following rules:
 
 1. **Definitions**:
    - **Bulky**:
@@ -22,7 +22,7 @@ The function `sort(width, height, length, mass)` determines the correct stack fo
 ## Example Usage
 
 ### Function Definition
-```python
+python
 def sort(width, height, length, mass):
     # Function logic here
     pass
