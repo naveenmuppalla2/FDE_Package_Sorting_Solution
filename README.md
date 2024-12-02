@@ -1,18 +1,28 @@
 # FDE Package Sorting Solution
 
-# Objective
-This repository contains the solution for sorting packages into appropriate stacks based on their volume and mass.
+## Objective
+This repository contains the solution for sorting packages into appropriate stacks based on their volume and mass as specified in the FDE Technical Screen.
 
-# Sorting Logic:
-1. **STANDARD**: Packages that are neither bulky nor heavy.
-2. **SPECIAL**: Packages that are either bulky or heavy.
-3. **REJECTED**: Packages that are both bulky and heavy.
+## Sorting Logic
 
-# Usage
-The function 'sort(width, height, length, mass)' takes the following parameters:
-- 'width', 'height', 'length' (in cm): Dimensions of the package.
-- 'mass' (in kg): Weight of the package.
+The function `sort(width, height, length, mass)` determines the correct stack for a package based on the following rules:
 
-# Example:
-python
-print(sort(100, 50, 200, 15))  # Output: "STANDARD"
+1. **Definitions**:
+   - **Bulky**:
+     - Volume (width × height × length) ≥ 1,000,000 cm³, OR
+     - Any dimension (width, height, or length) ≥ 150 cm.
+   - **Heavy**:
+     - Mass ≥ 20 kg.
+
+2. **Stack Assignment**:
+   - **STANDARD**: Neither bulky nor heavy.
+   - **SPECIAL**: Either bulky or heavy (but not both).
+   - **REJECTED**: Both bulky and heavy.
+
+## Example Usage
+
+### Function Definition
+```python
+def sort(width, height, length, mass):
+    # Function logic here
+    pass
